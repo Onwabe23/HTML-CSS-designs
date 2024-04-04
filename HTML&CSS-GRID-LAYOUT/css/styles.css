@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 32, 32);
+}
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr 1.2fr 0.8fr;
+    grid-gap: 0.4rem;
+    grid-template-areas: 
+    " nav nav nav"
+    'main main main'
+    'content1 content2 content3'
+    'footer footer footer';
+    color: white;
+    font-weight: 600;
+    font-size: 38px;
+}
+nav{
+   box-shadow: 3px 3px 5px rgb(5, 32, 32, 0.1);
+   background-color: rgb(11, 48, 48);
+    grid-area: nav;
+    display: flex;
+    color: white;
+    text-transform: capitalize;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+main, .content1, .content2, .content3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    
+    grid-area: main;
+    text-align: center;
+}
+.content1{
+    background-color: blue;
+    grid-area: content1;
+}
+.content2{
+    background-color: brown;
+    grid-area: content2;
+}
+.content3{
+    background-color: burlywood;
+    grid-area: content3;
+}
+footer{
+    background-color: blueviolet;
+    grid-area: footer;
+}
+
+@media(max-width:960px) {
+    .container{
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1.8fr 1.0fr 1.0fr 1.0fr 0.8fr;
+        grid-template-areas: 
+        " nav nav nav"
+        'main main main'
+        'content1 content1 content1'
+        'content2 content2 content2'
+        'content3 content3 content3'
+        'footer footer footer';
+    } 
+    nav,main, .content1,.content2, .content3, footer{
+        font-size: 18px;
+    }
+}

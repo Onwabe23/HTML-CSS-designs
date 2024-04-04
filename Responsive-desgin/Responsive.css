@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 30% 1fr;
+}
+.side{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    width: 100%;
+    height: 20%;
+    background-color: #435A64;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    width: 90px;
+    height: 100%;
+}
+.whatsApp_logo{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.icon{
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 20px;
+}
+.bottom{
+    flex: 1;
+}
+.links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(138, 132, 132);
+}
+.Active{
+    color: #25D366;
+    text-decoration: underline;
+    text-decoration: solid;
+    text-decoration: underline 3px;
+    text-underline-offset: 12px;
+}
+.Active span{
+    background-color: #25D366;
+}
+span{
+    border-radius: 50%;
+    background-color: rgb(138, 132, 132);
+    color: rgb(62, 61, 61);
+    padding-right: 3px;
+    font-size: 12px;
+    font-weight: 900;
+    vertical-align: middle;
+}
+span:hover{
+    background-color: #25D366;
+}
+ul li a:hover{
+    color: #25D366;
+    text-decoration: underline 3px;
+    text-underline-offset: 12px;
+}
+.persons{
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+}
+.persons1{
+
+    height: 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+.user_image{
+    margin-left: 10px;
+    padding-right: 5px;
+}
+.user_pic{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.user_chat{
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    margin-top: 10px;
+}
+.user_name{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.user_message{
+    font-style: italic;
+}
+.right{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.message{
+    background-image: url(wallpaper.jpg);
+}
+@media (max-width: 1078px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .side{
+        height: 100%;
+    }
+    .message{
+        display: none;
+    }
+}
+@media(min-width:340){
+    .container{
+        min-width: 300px;
+    }
+}
